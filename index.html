@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KUSH MITTAL | DATA ANALYST, STUDENT & FREELANCER</title>
+  <meta name="description"
+    content="Portfolio of KUSH MITTAL - Data Analyst, Student & Freelancer proficient in Power BI, SQL, Advanced Excel, Python & Generative AI." />
+  <meta name="keywords"
+    content="KUSH MITTAL, Kush Mittal, Data Analyst, Student, Freelancer, Portfolio, Power BI, SQL, Excel, Python, University of Technology Jaipur" />
+  <meta name="author" content="KUSH MITTAL" />
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              sky: '#38bdf8',
+              teal: '#14b8a6',
+              violet: '#8b5cf6',
+              indigo: '#6366f1',
+              dark: '#05070f',
+              surface: '#0b0f19',
+              card: '#0f172a',
+              border: '#1e293b',
+              muted: '#94a3b8',
+            }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Design Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-[#050505] bg-black text-slate-100 font-sans selection:bg-[#38BDF8] selection:text-black min-h-screen">
+
+  <!-- ==========================================================================
+ HEADER & NAVIGATION BAR
+ ========================================================================== -->
+  <header
+    class="fixed top-0 left-0 w-full z-50 bg-[#050505]/90 backdrop-blur-xl border-b border-[#38BDF8]/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- Brand Logotype in CAPITAL LETTERS -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div
+          class="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#38BDF8] via-[#0284C7] to-cyan-400 p-[2px] shadow-lg shadow-[#38BDF8]/25 group-hover:scale-105 transition-transform duration-300">
+          <div
+            class="w-full h-full bg-[#050505] rounded-[10px] flex items-center justify-center font-outfit font-black text-xl text-[#38BDF8]">
+            KM
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span
+            class="font-outfit font-extrabold text-xl tracking-wider text-white group-hover:text-[#38BDF8] transition-colors">
+            KUSH MITTAL
+          </span>
+          <span class="text-[10px] tracking-widest text-[#38BDF8] font-mono uppercase font-bold">
+            DATA ANALYST & CREATIVE TECH
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav
+        class="hidden lg:flex items-center gap-1 bg-black/60 p-1.5 rounded-full border border-[#38BDF8]/40 backdrop-blur-xl shadow-lg shadow-[#38BDF8]/15">
+        <a href="#home"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">HOME</a>
+        <a href="#about"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">ABOUT</a>
+        <a href="#services"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">WORK</a>
+        <a href="#experience"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">EXPERIENCE</a>
+        <a href="#education"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">EDUCATION</a>
+        <a href="#projects"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">PROJECTS</a>
+        <a href="#certificates"
+          class="nav-link px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white hover:text-[#38BDF8] transition-all">CERTIFICATES</a>
+      </nav>
+
+      <!-- Action CTA Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#contact" class="btn-gold !px-5 !py-2.5 text-xs font-bold uppercase tracking-wider">
+          <span>LET'S CONNECT</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-toggle"
+        class="lg:hidden p-2.5 rounded-xl bg-black/60 border border-[#38BDF8]/30 text-white hover:text-[#38BDF8]">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer"
+      class="hidden lg:hidden bg-[#050505]/98 border-b border-[#38BDF8]/30 backdrop-blur-2xl px-6 py-6 transition-all">
+      <div class="flex flex-col gap-3 font-outfit text-sm font-semibold tracking-wider uppercase">
+        <a href="#home"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">HOME
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#about"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">ABOUT
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#services"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">WORK
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#experience"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">EXPERIENCE
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#education"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">EDUCATION
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#projects"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">PROJECTS
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#certificates"
+          class="nav-link py-2.5 border-b border-white/5 text-white hover:text-[#38BDF8] flex items-center justify-between">CERTIFICATES
+          <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+        <a href="#contact"
+          class="nav-link py-2.5 text-white hover:text-[#38BDF8] flex items-center justify-between">CONTACT <i
+            data-lucide="chevron-right" class="w-4 h-4"></i></a>
+      </div>
+      <div class="mt-6 pt-4 border-t border-white/10 flex flex-col gap-3">
+        <a href="#contact" class="btn-gold w-full py-3 text-xs font-bold uppercase tracking-wider text-center">
+          <span>LET'S CONNECT</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-20">
+
+    <!-- ==========================================================================
+ HERO / HOME SECTION (CINEMATIC COMPOSITION)
+ ========================================================================== -->
+    <section id="home"
+      class="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+      <!-- Subtle Red-Gold Ambient Radial Glow -->
+      <div
+        class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#38BDF8]/10 rounded-full blur-[160px] pointer-events-none">
+      </div>
+
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Hero Text Column -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left space-y-6">
+
+          <!-- Welcome Text -->
+          <p class="text-xs sm:text-sm font-mono font-bold tracking-widest text-[#38BDF8] uppercase">
+            WELCOME TO MY
+          </p>
+
+          <!-- Main Bold Gold PORTFOLIO / KUSH MITTAL Heading -->
+          <div class="space-y-2">
+            <h1
+              class="text-5xl sm:text-7xl md:text-8xl font-outfit font-black tracking-tight text-white uppercase leading-none">
+              <span class="gold-gradient-text gold-glow-text block">PORTFOLIO</span>
+            </h1>
+            <p class="text-lg sm:text-2xl font-outfit font-bold uppercase tracking-widest text-slate-300 pt-1">
+              KUSH MITTAL
+            </p>
+          </div>
+
+          <!-- Supporting Professional Roles -->
+          <div class="flex flex-wrap items-center gap-2.5 text-xs sm:text-sm font-mono font-semibold">
+            <span
+              class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/20 text-white font-bold shadow-sm">Data
+              Analyst</span>
+            <span class="text-slate-500">•</span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/20 text-white font-bold shadow-sm">MIS
+              Executive</span>
+            <span class="text-slate-500">•</span>
+            <span
+              class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/20 text-white font-bold shadow-sm">Generative
+              AI</span>
+            <span class="text-slate-500">•</span>
+            <span
+              class="px-3.5 py-1.5 rounded-lg bg-white/10 border border-white/20 text-white font-bold shadow-sm">GitHub
+              Copilot</span>
+          </div>
+
+          <!-- Dynamic Typewriter Subtitle -->
+          <div class="flex items-center gap-2 text-lg sm:text-xl font-outfit font-bold text-slate-300 min-h-[36px]">
+            <span class="text-[#38BDF8] font-mono">&gt;</span>
+            <span id="typewriter-text" class="text-[#38BDF8] border-r-2 border-[#38BDF8] pr-1 animate-pulse"></span>
+          </div>
+
+          <!-- Hero Bio Summary -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+            Aspiring <strong class="text-white">Data Analyst & MIS Executive</strong> passionate about turning raw data
+            into actionable insights. Expert in <strong class="text-[#38BDF8]">Power BI, SQL, Python, Advanced Excel,
+              Data Cleaning, Visual Dashboards</strong>, and AI analytics strategy.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+            <a href="#contact" class="btn-gold flex-1 sm:flex-initial text-xs sm:text-sm">
+              <span>LET'S CONNECT</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#projects" class="btn-glass flex-1 sm:flex-initial text-xs sm:text-sm">
+              <i data-lucide="folder-kanban" class="w-4 h-4 text-[#38BDF8]"></i>
+              <span>VIEW FEATURED WORK</span>
+            </a>
+
+            <!-- Official LinkedIn Circular App Badge -->
+            <a href="https://www.linkedin.com/in/kush-mittal-1b5974299" target="_blank" rel="noopener noreferrer"
+              class="w-11 h-11 rounded-full bg-[#0a66c2]/20 border border-[#0a66c2]/50 hover:bg-[#0a66c2] flex items-center justify-center text-white shadow-lg shadow-[#0a66c2]/25 hover:scale-110 transition-all duration-300 group"
+              title="Connect on LinkedIn">
+              <svg class="w-5 h-5 fill-[#0a66c2] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+
+            <!-- Official GitHub Circular App Badge -->
+            <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+              class="w-11 h-11 rounded-full bg-white/10 border border-white/20 hover:bg-white flex items-center justify-center text-white shadow-lg shadow-white/10 hover:scale-110 transition-all duration-300 group"
+              title="View GitHub Repositories">
+              <svg class="w-5 h-5 fill-white group-hover:fill-black transition-colors" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Real Executive Portrait Column (Replacing AI Cartoon Character) -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center relative z-10">
+          <div class="relative w-full max-w-md flex flex-col items-center justify-center text-center">
+
+            <!-- Glowing Golden Ambient Backlight -->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#38BDF8]/20 rounded-full blur-[100px] pointer-events-none">
+            </div>
+
+            <!-- Executive Portrait Container with Metallic Gold Frame -->
+            <div
+              class="relative z-10 w-full max-w-sm sm:max-w-md rounded-3xl p-3 bg-white/5 border border-[#38BDF8]/35 backdrop-blur-xl shadow-2xl shadow-[#38BDF8]/20 group hover:border-[#38BDF8]/70 transition-all duration-500">
+              <div
+                class="relative w-full rounded-2xl overflow-hidden bg-gradient-to-b from-[#0b0b0b]/40 to-[#050505] flex items-center justify-center">
+                <img src="assets/kush-portrait-real.png" alt="Kush Mittal - Data Analyst & MIS Executive"
+                  fetchpriority="high" decoding="async"
+                  class="w-full h-auto object-cover max-h-[460px] transform group-hover:scale-105 transition-transform duration-700 filter drop-shadow-[0_12px_30px_rgba(0,0,0,0.9)]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-50">
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges Below Portrait -->
+            <div class="relative z-20 flex flex-col items-center gap-2 -mt-5 w-full">
+              <div
+                class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-black/90 border border-[#38BDF8]/50 backdrop-blur-xl shadow-2xl text-xs font-outfit font-bold uppercase text-white">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>KUSH MITTAL • DATA ANALYST</span>
+              </div>
+
+              <div
+                class="flex items-center gap-2 text-[11px] font-mono text-slate-300 bg-black/80 px-4 py-1.5 rounded-full border border-white/10 backdrop-blur-md">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#38BDF8]"></i>
+                <span>Alwar, Rajasthan, India</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+ SECTION: ABOUT (SCREENSHOT 5 EXACT REPLICATION - 'A creative mind visualized.')
+ ========================================================================== -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+
+        <!-- Left Column: Title, Bio & Hanging Tags Curve -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+
+          <h2 class="text-4xl sm:text-6xl font-outfit font-black text-white tracking-tight leading-tight">
+            A creative mind visualized.
+          </h2>
+
+          <p class="text-slate-300 text-base sm:text-lg font-normal leading-relaxed max-w-2xl">
+            Hi, I'm <strong class="text-white">Kush Mittal</strong>, a multidisciplinary creative working across data
+            analytics, business intelligence and visual storytelling. From interactive Power BI dashboards to end-to-end
+            SQL data pipelines, I create work that balances strong analytical logic with thoughtful execution.
+          </p>
+
+          <!-- Location Pill Badge -->
+          <div class="pt-2">
+            <div
+              class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-xs font-mono text-slate-300 shadow-xl">
+              <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+              <span class="text-slate-400">Based in</span>
+              <strong class="text-white font-bold">Alwar, Rajasthan, India</strong>
+            </div>
+          </div>
+
+          <!-- SVG Dashed Curve Line & Hanging Gold Year Tags (Screenshot 5) -->
+          <div class="pt-12 relative max-w-2xl">
+
+            <!-- Curved SVG Dashed Path -->
+            <svg class="w-full h-24 overflow-visible pointer-events-none" viewBox="0 0 600 80" fill="none">
+              <path d="M0,50 Q150,10 300,50 T600,20" stroke="rgba(255,255,255,0.3)" stroke-width="2"
+                stroke-dasharray="6 6" />
+            </svg>
+
+            <!-- Hanging Gold Tags Positioned Along Curve -->
+            <div class="flex items-center justify-between -mt-16 px-4">
+
+              <!-- Tag 2023 -->
+              <div class="group flex flex-col items-center">
+                <div class="hanging-year-tag">2023</div>
+                <span
+                  class="text-[10px] font-mono text-slate-400 uppercase mt-3 font-semibold group-hover:text-[#38BDF8]">Data
+                  Logic & Excel</span>
+              </div>
+
+              <!-- Tag 2024 -->
+              <div class="group flex flex-col items-center pt-6">
+                <div class="hanging-year-tag !rotate-[4deg]">2024</div>
+                <span
+                  class="text-[10px] font-mono text-slate-400 uppercase mt-3 font-semibold group-hover:text-[#38BDF8]">SQL
+                  & Relational DBs</span>
+              </div>
+
+              <!-- Tag 2025 -->
+              <div class="group flex flex-col items-center -pt-4">
+                <div class="hanging-year-tag !rotate-[-3deg]">2025</div>
+                <span
+                  class="text-[10px] font-mono text-slate-400 uppercase mt-3 font-semibold group-hover:text-[#38BDF8]">Power
+                  BI & DAX</span>
+              </div>
+
+              <!-- Tag 2026 -->
+              <div class="group flex flex-col items-center pt-4">
+                <div class="hanging-year-tag !rotate-[6deg] !bg-gradient-to-b !from-emerald-500 !to-teal-600">2026</div>
+                <span class="text-[10px] font-mono text-emerald-400 uppercase mt-3 font-bold">BCA GRADUATED</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right Column: Cinematic Portrait with Gold Side Light (Screenshot 5) -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div
+            class="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+
+            <!-- Fine Grid Overlay Behind Image -->
+            <div
+              class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,77,31,0.15)_0%,transparent_70%)] pointer-events-none z-0">
+            </div>
+
+            <img src="assets/about-photo.jpg" alt="Kush Mittal Portrait" loading="lazy" decoding="async"
+              class="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-700" />
+
+            <!-- Soft Vignette & Gold Glow Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-80 z-20">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+ SECTION: WORK (SCREENSHOT 4 EXACT REPLICATION - FLUID BLOB & STAGGERED CARDS)
+ ========================================================================== -->
+    <section id="services"
+      class="min-h-[85vh] flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+      <!-- Fluid Burnt-Gold Organic Blob Backdrop (Screenshot 4) -->
+      <div class="fluid-gold-blob"></div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
+
+        <!-- Section Header Centered -->
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+          <h2 class="text-4xl sm:text-6xl font-outfit font-black text-white uppercase tracking-tight">
+            Work
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <!-- Left Column: Photographer / Camera Portrait (Screenshot 4) -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <img src="assets/hero-portrait.jpg" alt="Creative Work" loading="lazy" decoding="async"
+                class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#050505]/90"></div>
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Diagonally Staggered Floating Cards (Screenshot 4) -->
+          <div class="lg:col-span-7 space-y-3.5 sm:space-y-4">
+
+            <!-- Floating Card 01 -->
+            <div class="service-card-floating flex items-start gap-4 hover:translate-x-2 transition-transform">
+              <div class="gold-num-pill">01</div>
+              <div>
+                <h3 class="font-outfit font-bold text-lg text-white">Art Direction & BI Architecture</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Building visual data systems and dashboards that give brands and enterprises a distinct operational
+                  edge.
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Card 02 -->
+            <div class="service-card-floating flex items-start gap-4 sm:ml-8 hover:translate-x-2 transition-transform">
+              <div class="gold-num-pill">02</div>
+              <div>
+                <h3 class="font-outfit font-bold text-lg text-white">Visual Design & Data Storytelling</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Identity systems, analytics campaigns, digital executive dashboards and everything in between.
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Card 03 -->
+            <div class="service-card-floating flex items-start gap-4 sm:ml-16 hover:translate-x-2 transition-transform">
+              <div class="gold-num-pill">03</div>
+              <div>
+                <h3 class="font-outfit font-bold text-lg text-white">Python Analytics & Automation</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Data wrangling, automated scripts, Pandas pipelines and visual analytics models built to move.
+                </p>
+              </div>
+            </div>
+
+            <!-- Floating Card 04 -->
+            <div class="service-card-floating flex items-start gap-4 sm:ml-24 hover:translate-x-2 transition-transform">
+              <div class="gold-num-pill">04</div>
+              <div>
+                <h3 class="font-outfit font-bold text-lg text-white">Creative Strategy & Insights</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Finding the actionable business idea behind raw datasets and making it matter for decision makers.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+ 3D HOLOGRAPHIC QUANTUM CHAMBER STREAM (PIPELINE TO CERTIFICATES)
+ ========================================================================== -->
+    <div class="quantum-chamber-stream max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+
+      <!-- ======================================================================
+ CHAMBER 01: 3D DATA ANALYTICS PIPELINE (RAW DATA TO DASHBOARD)
+ ====================================================================== -->
+      <!-- ======================================================================
+ CHAMBER 01: VIRTUAL INTERNSHIPS & CORPORATE JOB SIMULATIONS
+ ====================================================================== -->
+      <section id="experience" class="quantum-chamber">
+        <div class="chamber-frame">
+
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
+            <h2 class="text-3xl sm:text-4xl font-outfit font-black uppercase text-white tracking-tight">
+              CORPORATE <span class="gold-gradient-text gold-glow-text">JOB SIMULATIONS</span>
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm font-normal">
+              Practical analytics experience completed with global industry leaders.
+            </p>
+          </div>
+
+          <!-- Widescreen Landscape Cards Stack -->
+          <div class="max-w-6xl mx-auto space-y-5">
+
+            <!-- Landscape Card 1: Tata Group -->
+            <div
+              class="glass-panel p-6 sm:p-8 tilt-card relative overflow-hidden border border-[#38BDF8]/40 hover:border-[#38BDF8] transition-all flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl group">
+              <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#38BDF8] to-amber-500"></div>
+
+              <!-- Left Column: Corporate Logo & Info -->
+              <div class="flex items-center gap-5 w-full md:w-5/12">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-[#38BDF8]/10 border border-[#38BDF8]/30 flex items-center justify-center text-[#38BDF8] shrink-0 shadow-lg shadow-[#38BDF8]/20 group-hover:scale-105 transition-transform">
+                  <i data-lucide="building-2" class="w-7 h-7"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-[#38BDF8]/20 text-[#38BDF8] font-mono text-[10px] font-bold uppercase">AUG
+                      2026</span>
+                    <span class="text-[10px] font-mono text-slate-400 uppercase">FORAGE</span>
+                  </div>
+                  <h3
+                    class="font-outfit font-black text-xl text-white uppercase group-hover:text-[#38BDF8] transition-colors mt-1">
+                    GENAI DATA ANALYTICS
+                  </h3>
+                  <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase">TATA GROUP</p>
+                </div>
+              </div>
+
+              <!-- Middle Column: Punchy Key Highlights -->
+              <div
+                class="w-full md:w-4/12 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 text-xs text-slate-300 space-y-1.5 font-normal">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#38BDF8] shrink-0"></i>
+                  <span>EDA & Loan Delinquency Risk Profiling</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#38BDF8] shrink-0"></i>
+                  <span>Predictive Delinquency AI & Business Reporting</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#38BDF8] shrink-0"></i>
+                  <span>AI Collections Strategy Implementation</span>
+                </div>
+              </div>
+
+              <!-- Right Column: Verification CTA -->
+              <div
+                class="w-full md:w-3/12 flex flex-col items-center md:items-end justify-center shrink-0 border-t md:border-t-0 border-white/10 pt-4 md:pt-0">
+                <a href="https://drive.google.com/file/d/1suOqFr9S8w4ZE_9dxRtrlp2z9QL2mcZj/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2.5 !px-5 text-xs font-bold uppercase tracking-wider w-full text-center flex items-center justify-center gap-2">
+                  <i data-lucide="file-check" class="w-4 h-4"></i>
+                  <span>VERIFY TATA PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Landscape Card 2: Deloitte -->
+            <div
+              class="glass-panel p-6 sm:p-8 tilt-card relative overflow-hidden border border-[#38BDF8]/40 hover:border-[#38BDF8] transition-all flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl group">
+              <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#38BDF8] to-[#38BDF8]"></div>
+
+              <!-- Left Column: Corporate Logo & Info -->
+              <div class="flex items-center gap-5 w-full md:w-5/12">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-[#38BDF8]/10 border border-[#38BDF8]/30 flex items-center justify-center text-[#38BDF8] shrink-0 shadow-lg shadow-[#38BDF8]/20 group-hover:scale-105 transition-transform">
+                  <i data-lucide="shield-check" class="w-7 h-7"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-[#38BDF8]/20 text-[#38BDF8] font-mono text-[10px] font-bold uppercase">AUG
+                      2026</span>
+                    <span class="text-[10px] font-mono text-slate-400 uppercase">FORAGE</span>
+                  </div>
+                  <h3
+                    class="font-outfit font-black text-xl text-white uppercase group-hover:text-[#38BDF8] transition-colors mt-1">
+                    DATA ANALYTICS SIMULATION
+                  </h3>
+                  <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase">DELOITTE</p>
+                </div>
+              </div>
+
+              <!-- Middle Column: Punchy Key Highlights -->
+              <div
+                class="w-full md:w-4/12 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 text-xs text-slate-300 space-y-1.5 font-normal">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#38BDF8] shrink-0"></i>
+                  <span>Data Telemetry & Telecommunication Analytics</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#38BDF8] shrink-0"></i>
+                  <span>Forensic Technology & Investigative Design</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-[#38BDF8] shrink-0"></i>
+                  <span>Enterprise Client Strategy Recommendations</span>
+                </div>
+              </div>
+
+              <!-- Right Column: Verification CTA -->
+              <div
+                class="w-full md:w-3/12 flex flex-col items-center md:items-end justify-center shrink-0 border-t md:border-t-0 border-white/10 pt-4 md:pt-0">
+                <a href="https://drive.google.com/file/d/1fcUhvjQIBkQ2eEsS3KKnegCzDZ_koSUt/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2.5 !px-5 text-xs font-bold uppercase tracking-wider w-full text-center flex items-center justify-center gap-2">
+                  <i data-lucide="file-check" class="w-4 h-4"></i>
+                  <span>VERIFY DELOITTE PDF</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Concise Widescreen Metric Strip -->
+          <div class="mt-8 max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+              <div class="text-lg font-outfit font-black text-[#38BDF8]">2 GLOBAL</div>
+              <div class="text-[10px] font-mono text-slate-400 uppercase">Simulations</div>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+              <div class="text-lg font-outfit font-black text-[#38BDF8]">TATA & DELOITTE</div>
+              <div class="text-[10px] font-mono text-slate-400 uppercase">Top Enterprises</div>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+              <div class="text-lg font-outfit font-black text-emerald-400">100% VERIFIED</div>
+              <div class="text-[10px] font-mono text-slate-400 uppercase">Drive Credentials</div>
+            </div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+              <div class="text-lg font-outfit font-black text-[#38BDF8]">FORAGE</div>
+              <div class="text-[10px] font-mono text-slate-400 uppercase">Authenticated</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================================================================
+ CHAMBER 02: EDUCATION & ACADEMICS
+ ====================================================================== -->
+      <section id="education" class="quantum-chamber">
+        <div class="chamber-frame">
+
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <h2 class="text-3xl sm:text-5xl font-outfit font-black uppercase text-white tracking-tight">
+              EDUCATION & <span class="gold-gradient-text gold-glow-text">ACADEMICS</span>
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base font-normal">
+              Formal degrees, coursework, and school education completed with first-class distinction.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            <!-- Education Card 1: College BCA -->
+            <div
+              class="glass-panel p-8 tilt-card relative overflow-hidden group border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-[#38BDF8]/10 rounded-full blur-2xl group-hover:bg-[#38BDF8]/20 transition-all">
+              </div>
+
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="px-4 py-1.5 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-[#38BDF8] font-mono text-xs font-bold">
+                  2023 – 2026 • GRADUATED
+                </span>
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#38BDF8]/10 border border-[#38BDF8]/30 flex items-center justify-center text-[#38BDF8]">
+                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                </div>
+              </div>
+
+              <h3 class="font-outfit font-black text-2xl text-white uppercase">
+                BACHELOR OF COMPUTER APPLICATIONS (BCA)
+              </h3>
+              <p class="text-[#38BDF8] font-mono text-sm font-bold uppercase mt-1">
+                UNIVERSITY OF TECHNOLOGY, JAIPUR
+              </p>
+              <p class="text-xs text-emerald-400 font-bold uppercase mt-1 flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> FIRST CLASS DISTINCTION
+              </p>
+
+              <p class="text-sm text-slate-300 leading-relaxed mt-4">
+                Comprehensive undergraduate program focusing on Database Management Systems (DBMS), Advanced Data
+                Structures, Python Programming, Object-Oriented Software Engineering, and Business Analytics.
+              </p>
+
+              <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Database
+                  Systems</span>
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Data Analytics</span>
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Python
+                  Programming</span>
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Web
+                  Technologies</span>
+              </div>
+            </div>
+
+            <!-- Education Card 2: Class 12th -->
+            <div
+              class="glass-panel p-8 tilt-card relative overflow-hidden group border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-[#38BDF8]/10 rounded-full blur-2xl group-hover:bg-[#38BDF8]/20 transition-all">
+              </div>
+
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="px-4 py-1.5 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-[#38BDF8] font-mono text-xs font-bold">
+                  2020 – 2023
+                </span>
+                <div
+                  class="w-10 h-10 rounded-xl bg-[#38BDF8]/10 border border-[#38BDF8]/30 flex items-center justify-center text-[#38BDF8]">
+                  <i data-lucide="book-open" class="w-5 h-5"></i>
+                </div>
+              </div>
+
+              <h3 class="font-outfit font-black text-2xl text-white uppercase">
+                CLASS 12TH / HIGHER SECONDARY SCHOOL
+              </h3>
+              <p class="text-[#38BDF8] font-mono text-sm font-bold uppercase mt-1">
+                INDIRA HAPPY SEN. SEC. SCHOOL
+              </p>
+              <p class="text-xs text-emerald-400 font-bold uppercase mt-1 flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> FIRST CLASS DISTINCTION
+              </p>
+
+              <p class="text-sm text-slate-300 leading-relaxed mt-4">
+                Completed Senior Secondary education with strong quantitative foundations in Mathematics, Computer
+                Studies, and General Science, establishing core analytical logic.
+              </p>
+
+              <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Mathematics</span>
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Computer
+                  Science</span>
+                <span class="px-2.5 py-1 rounded bg-white/5 text-[11px] font-mono text-slate-300">Analytical
+                  Logic</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- ======================================================================
+ CHAMBER 04: FEATURED PROJECTS (INTERACTIVE 3D SHOWCASE)
+ ====================================================================== -->
+      <section id="projects" class="quantum-chamber">
+        <div class="chamber-frame">
+
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <h2 class="text-3xl sm:text-5xl font-outfit font-black uppercase text-white tracking-tight">
+              FEATURED <span class="gold-gradient-text gold-glow-text">PROJECTS</span>
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base font-normal">
+              High-impact data analytics projects linking directly to source code and interactive dashboards on GitHub.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1: Heart Disease Analysis Dashboard -->
+            <div
+              class="glass-panel tilt-card flex flex-col justify-between overflow-hidden group border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all">
+              <div class="relative h-52 overflow-hidden bg-slate-900">
+                <img src="assets/project-heart-disease.jpg" alt="Heart Disease Analysis Dashboard" loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-transparent to-transparent"></div>
+                <span
+                  class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#38BDF8] text-white font-mono text-[10px] font-black uppercase">
+                  POWER BI & DAX
+                </span>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="font-outfit font-black text-xl text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                    HEART DISEASE ANALYSIS
+                  </h3>
+
+                  <div class="text-xs text-slate-300 leading-relaxed mt-3 space-y-1">
+                    <p>• Analyzes clinical records of heart failure patients to uncover survival patterns, risk factors
+                      & age trends.</p>
+                    <p>• Built DAX measures for Alive %, age segmentation, serum sodium risk markers & diabetes
+                      comorbidity link.</p>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between gap-3">
+                  <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+                    class="btn-gold !py-2 !px-4 text-xs flex-1 text-center font-bold">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>VIEW REPO</span>
+                  </a>
+                  <button onclick="openProjectModal('heart')" class="btn-glass !py-2 !px-4 text-xs font-bold">
+                    <i data-lucide="eye" class="w-4 h-4 text-[#38BDF8]"></i>
+                    <span>DEMO</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: HR Analytics Dashboard -->
+            <div
+              class="glass-panel tilt-card flex flex-col justify-between overflow-hidden group border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all">
+              <div class="relative h-52 overflow-hidden bg-slate-900">
+                <img src="assets/project-hr-analytics.jpg" alt="HR Analytics Dashboard" loading="lazy" decoding="async"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-transparent to-transparent"></div>
+                <span
+                  class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#38BDF8] text-white font-mono text-[10px] font-black uppercase">
+                  POWER BI & DAX
+                </span>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="font-outfit font-black text-xl text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                    HR ANALYTICS DASHBOARD
+                  </h3>
+
+                  <div class="text-xs text-slate-300 leading-relaxed mt-3 space-y-1">
+                    <p>• Interactive workforce attrition, demographics, and performance analytics dashboard built using
+                      Power BI and DAX.</p>
+                    <p>• Delivers deep employee retention insights, turnover factors, salary slab analysis & job
+                      satisfaction KPIs.</p>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between gap-3">
+                  <a href="https://github.com/kushmittal7238-dot/HR-Analytics-Dashboards" target="_blank"
+                    rel="noopener noreferrer" class="btn-gold !py-2 !px-4 text-xs flex-1 text-center font-bold">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>VIEW REPO</span>
+                  </a>
+                  <button onclick="openProjectModal('hr')" class="btn-glass !py-2 !px-4 text-xs font-bold">
+                    <i data-lucide="eye" class="w-4 h-4 text-[#38BDF8]"></i>
+                    <span>DEMO</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Vrinda Store Data Analysis -->
+            <div
+              class="glass-panel tilt-card flex flex-col justify-between overflow-hidden group border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all">
+              <div class="relative h-52 overflow-hidden bg-slate-900">
+                <img src="assets/project-vrinda-store.jpg" alt="Vrinda Store Data Analysis" loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-transparent to-transparent"></div>
+                <span
+                  class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#38BDF8] text-white font-mono text-[10px] font-black uppercase">
+                  ADVANCED EXCEL
+                </span>
+              </div>
+
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3
+                    class="font-outfit font-black text-xl text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                    VRINDA STORE DATA ANALYSIS
+                  </h3>
+
+                  <div class="text-xs text-slate-300 leading-relaxed mt-3 space-y-1">
+                    <p>• Analyzed 31,047 customer orders and ₹21.17M+ revenue using Excel pivot charts & customer
+                      segmentation.</p>
+                    <p>• Identifies top revenue states (Karnataka, MH), Amazon & Flipkart channel shares, and gender
+                      purchasing patterns.</p>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between gap-3">
+                  <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+                    class="btn-gold !py-2 !px-4 text-xs flex-1 text-center font-bold">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>VIEW REPO</span>
+                  </a>
+                  <button onclick="openProjectModal('vrinda')" class="btn-glass !py-2 !px-4 text-xs font-bold">
+                    <i data-lucide="eye" class="w-4 h-4 text-[#38BDF8]"></i>
+                    <span>DEMO</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ======================================================================
+ CHAMBER 05: VERIFIED CERTIFICATIONS & LICENSES
+ ====================================================================== -->
+      <!-- ==========================================================================
+     SECTION: VERIFIED CERTIFICATIONS (6 AUTHENTIC LINKEDIN & FORAGE CREDENTIALS)
+     ========================================================================== -->
+      <section id="certificates"
+        class="min-h-[85vh] lg:min-h-screen flex flex-col justify-center py-8 sm:py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8 space-y-2">
+            <h2 class="text-3xl sm:text-5xl font-outfit font-black uppercase text-white tracking-tight">
+              VERIFIED <span class="gold-gradient-text gold-glow-text">CERTIFICATIONS</span>
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm font-normal">
+              6 verified professional licenses, certifications and virtual job simulations authenticated via LinkedIn,
+              Microsoft & Forage.
+            </p>
+          </div>
+
+          <!-- 6 Verified Certificate Cards Grid (3x2 Desktop Layout) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+
+            <!-- Certificate 1: GenAI Data Analytics Simulation -->
+            <div
+              class="glass-panel p-4 sm:p-5 tilt-card border border-[#38BDF8]/40 hover:border-[#38BDF8] transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between mb-2.5">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-[#38BDF8]/20 flex items-center justify-center text-[#38BDF8] shadow-lg shadow-[#38BDF8]/10 group-hover:scale-110 transition-transform">
+                    <i data-lucide="building-2" class="w-5 h-5"></i>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold uppercase flex items-center gap-1">
+                    <i data-lucide="check-circle-2" class="w-3 h-3"></i> AUG 2026
+                  </span>
+                </div>
+                <h3
+                  class="font-outfit font-black text-base text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                  GENAI DATA ANALYTICS SIMULATION
+                </h3>
+                <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-0.5">Tata Group & Forage</p>
+                <div
+                  class="mt-2.5 p-2 rounded-lg bg-black/40 border border-white/5 font-mono text-[10px] text-slate-300">
+                  <span class="text-slate-500 block text-[9px] uppercase">Credential ID:</span>
+                  <span class="text-[#38BDF8] font-bold break-all">696a578e2e40c7c03cf49155</span>
+                </div>
+                <div class="mt-2.5 flex flex-wrap gap-1">
+                  <span class="tech-pill">GenAI</span>
+                  <span class="tech-pill">Data Analytics</span>
+                  <span class="tech-pill">Business Insights</span>
+                </div>
+              </div>
+              <div class="mt-3.5 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3">
+                <a href="https://drive.google.com/file/d/1suOqFr9S8w4ZE_9dxRtrlp2z9QL2mcZj/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2 !px-3 text-xs flex-1 text-center font-bold">
+                  <i data-lucide="file-check" class="w-3.5 h-3.5 inline mr-1"></i> VIEW CERTIFICATE
+                </a>
+              </div>
+            </div>
+
+            <!-- Certificate 2: Data Analytics Job Simulation -->
+            <div
+              class="glass-panel p-4 sm:p-5 tilt-card border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between mb-2.5">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-[#38BDF8]/20 flex items-center justify-center text-[#38BDF8] shadow-lg shadow-[#38BDF8]/10 group-hover:scale-110 transition-transform">
+                    <i data-lucide="briefcase" class="w-5 h-5"></i>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold uppercase flex items-center gap-1">
+                    <i data-lucide="check-circle-2" class="w-3 h-3"></i> AUG 2026
+                  </span>
+                </div>
+                <h3
+                  class="font-outfit font-black text-base text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                  DATA ANALYTICS JOB SIMULATION
+                </h3>
+                <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-0.5">Deloitte & Forage</p>
+                <div
+                  class="mt-2.5 p-2 rounded-lg bg-black/40 border border-white/5 font-mono text-[10px] text-slate-300">
+                  <span class="text-slate-500 block text-[9px] uppercase">Credential ID:</span>
+                  <span class="text-[#38BDF8] font-bold break-all">992a548e2e40c7c03cf49100</span>
+                </div>
+                <div class="mt-2.5 flex flex-wrap gap-1">
+                  <span class="tech-pill">Tableau</span>
+                  <span class="tech-pill">Data Wrangling</span>
+                  <span class="tech-pill">Executive BI</span>
+                </div>
+              </div>
+              <div class="mt-3.5 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3">
+                <a href="https://drive.google.com/file/d/1fcUhvjQIBkQ2eEsS3KKnegCzDZ_koSUt/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2 !px-3 text-xs flex-1 text-center font-bold">
+                  <i data-lucide="file-check" class="w-3.5 h-3.5 inline mr-1"></i> VIEW CERTIFICATE
+                </a>
+              </div>
+            </div>
+
+            <!-- Certificate 3: Microsoft Excel with A.I Masterclass -->
+            <div
+              class="glass-panel p-4 sm:p-5 tilt-card border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between mb-2.5">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-[#38BDF8]/20 flex items-center justify-center text-[#38BDF8] shadow-lg shadow-[#38BDF8]/10 group-hover:scale-110 transition-transform">
+                    <i data-lucide="sheet" class="w-5 h-5"></i>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold uppercase flex items-center gap-1">
+                    <i data-lucide="check-circle-2" class="w-3 h-3"></i> AUG 2026
+                  </span>
+                </div>
+                <h3
+                  class="font-outfit font-black text-base text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                  MICROSOFT EXCEL WITH A.I MASTERCLASS
+                </h3>
+                <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-0.5">LinkedIn Learning</p>
+                <div
+                  class="mt-2.5 p-2 rounded-lg bg-black/40 border border-white/5 font-mono text-[10px] text-slate-300">
+                  <span class="text-slate-500 block text-[9px] uppercase">Credential ID:</span>
+                  <span class="text-[#38BDF8] font-bold truncate block">564a1b43fa58b777...</span>
+                </div>
+                <div class="mt-2.5 flex flex-wrap gap-1">
+                  <span class="tech-pill">Advanced Excel</span>
+                  <span class="tech-pill">AI Formulas</span>
+                  <span class="tech-pill">Data Clean</span>
+                </div>
+              </div>
+              <div class="mt-3.5 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3">
+                <a href="https://drive.google.com/file/d/1tpjxYZlpnP_mxBQprkKJk6YPMD10msVO/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2 !px-3 text-xs flex-1 text-center font-bold">
+                  <i data-lucide="file-check" class="w-3.5 h-3.5 inline mr-1"></i> VIEW CERTIFICATE
+                </a>
+              </div>
+            </div>
+
+            <!-- Certificate 4: Learning Python -->
+            <div
+              class="glass-panel p-4 sm:p-5 tilt-card border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between mb-2.5">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-[#38BDF8]/20 flex items-center justify-center text-[#38BDF8] shadow-lg shadow-[#38BDF8]/10 group-hover:scale-110 transition-transform">
+                    <i data-lucide="code-2" class="w-5 h-5"></i>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold uppercase flex items-center gap-1">
+                    <i data-lucide="check-circle-2" class="w-3 h-3"></i> MAY 2026
+                  </span>
+                </div>
+                <h3
+                  class="font-outfit font-black text-base text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                  LEARNING PYTHON
+                </h3>
+                <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-0.5">LinkedIn Learning</p>
+                <div
+                  class="mt-2.5 p-2 rounded-lg bg-black/40 border border-white/5 font-mono text-[10px] text-slate-300">
+                  <span class="text-slate-500 block text-[9px] uppercase">Credential ID:</span>
+                  <span class="text-[#38BDF8] font-bold truncate block">c413612ab73902c2...</span>
+                </div>
+                <div class="mt-2.5 flex flex-wrap gap-1">
+                  <span class="tech-pill">Python 3</span>
+                  <span class="tech-pill">Pandas</span>
+                  <span class="tech-pill">Data Analysis</span>
+                </div>
+              </div>
+              <div class="mt-3.5 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3">
+                <a href="https://drive.google.com/file/d/11UtMxmmayQUPLYdZmTAwh1Rvb209Bs14N/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2 !px-3 text-xs flex-1 text-center font-bold">
+                  <i data-lucide="file-check" class="w-3.5 h-3.5 inline mr-1"></i> VIEW CERTIFICATE
+                </a>
+              </div>
+            </div>
+
+            <!-- Certificate 5: Data Analysis by Microsoft and LinkedIn -->
+            <div
+              class="glass-panel p-4 sm:p-5 tilt-card border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between mb-2.5">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-[#38BDF8]/20 flex items-center justify-center text-[#38BDF8] shadow-lg shadow-[#38BDF8]/10 group-hover:scale-110 transition-transform">
+                    <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold uppercase flex items-center gap-1">
+                    <i data-lucide="check-circle-2" class="w-3 h-3"></i> MAR 2026
+                  </span>
+                </div>
+                <h3
+                  class="font-outfit font-black text-base text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                  DATA ANALYSIS BY MICROSOFT AND LINKEDIN
+                </h3>
+                <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-0.5">Microsoft & LinkedIn</p>
+                <div
+                  class="mt-2.5 p-2 rounded-lg bg-black/40 border border-white/5 font-mono text-[10px] text-slate-300">
+                  <span class="text-slate-500 block text-[9px] uppercase">Credential ID:</span>
+                  <span class="text-[#38BDF8] font-bold truncate block">ad05dd452b626371...</span>
+                </div>
+                <div class="mt-2.5 flex flex-wrap gap-1">
+                  <span class="tech-pill">Sales Metrics</span>
+                  <span class="tech-pill">Excel Pivot</span>
+                  <span class="tech-pill">Data Modeling</span>
+                </div>
+              </div>
+              <div class="mt-3.5 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3">
+                <a href="https://drive.google.com/file/d/1l3xw-FJbIKmCpe8gmpgOsGIl5gkoLdSN/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2 !px-3 text-xs flex-1 text-center font-bold">
+                  <i data-lucide="file-check" class="w-3.5 h-3.5 inline mr-1"></i> VIEW CERTIFICATE
+                </a>
+              </div>
+            </div>
+
+            <!-- Certificate 6: Generative AI by Microsoft and LinkedIn -->
+            <div
+              class="glass-panel p-4 sm:p-5 tilt-card border border-[#38BDF8]/30 hover:border-[#38BDF8] transition-all flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between mb-2.5">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-[#38BDF8]/20 flex items-center justify-center text-[#38BDF8] shadow-lg shadow-[#38BDF8]/10 group-hover:scale-110 transition-transform">
+                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                  </div>
+                  <span
+                    class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px] font-bold uppercase flex items-center gap-1">
+                    <i data-lucide="check-circle-2" class="w-3 h-3"></i> MAR 2026
+                  </span>
+                </div>
+                <h3
+                  class="font-outfit font-black text-base text-white uppercase group-hover:text-[#38BDF8] transition-colors">
+                  GENERATIVE AI BY MICROSOFT AND LINKEDIN
+                </h3>
+                <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-0.5">Microsoft & LinkedIn</p>
+                <div
+                  class="mt-2.5 p-2 rounded-lg bg-black/40 border border-white/5 font-mono text-[10px] text-slate-300">
+                  <span class="text-slate-500 block text-[9px] uppercase">Credential ID:</span>
+                  <span class="text-[#38BDF8] font-bold truncate block">578fec23d876d373...</span>
+                </div>
+                <div class="mt-2.5 flex flex-wrap gap-1">
+                  <span class="tech-pill">Generative AI</span>
+                  <span class="tech-pill">LLMs</span>
+                  <span class="tech-pill">Prompt Engineering</span>
+                </div>
+              </div>
+              <div class="mt-3.5 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3">
+                <a href="https://drive.google.com/file/d/18ZKpAks_xaSLLW-E9mj465M43ruLCIZP/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn-gold !py-2 !px-3 text-xs flex-1 text-center font-bold">
+                  <i data-lucide="file-check" class="w-3.5 h-3.5 inline mr-1"></i> VIEW CERTIFICATE
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- ==========================================================================
+      SECTION: CONTACT ("LET'S CONNECT")
+      ========================================================================== -->
+      <section id="contact"
+        class="min-h-[85vh] lg:min-h-screen flex flex-col justify-center py-10 px-4 sm:px-6 lg:px-8 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+            <!-- Left Column: Title & Quick Info -->
+            <div class="lg:col-span-5 flex flex-col justify-between space-y-6 text-left relative">
+              <div class="relative z-10 space-y-3">
+                <h2
+                  class="text-5xl sm:text-6xl lg:text-7xl font-black font-outfit uppercase tracking-tight text-[#38BDF8] leading-none gold-glow-text">
+                  Let's<br />Connect
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base font-normal pt-2 leading-relaxed">
+                  Have a data analytics project, Power BI dashboard, or business inquiry? Drop a message below or email
+                  directly.
+                </p>
+              </div>
+
+              <!-- 3D AI Cartoon Animation Character -->
+              <div class="relative w-full overflow-hidden flex items-center justify-center pt-2">
+                <img src="assets/ai-cartoon-bg.jpg" alt="3D AI Cartoon Animation Character" loading="lazy"
+                  decoding="async"
+                  class="w-full max-w-md h-auto object-contain opacity-95 hover:opacity-100 transition-all duration-500 animate-float-bob radial-mask-blend rounded-2xl" />
+              </div>
+
+              <!-- Quick Social Links -->
+              <div class="grid grid-cols-3 gap-3 relative z-10 pt-1">
+                <a href="https://www.linkedin.com/in/kush-mittal-1b5974299" target="_blank" rel="noopener noreferrer"
+                  class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-[#0a66c2] hover:bg-[#0a66c2]/20 flex items-center justify-center gap-2 group transition-all">
+                  <svg class="w-4 h-4 fill-[#0a66c2] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                  <span class="text-[11px] font-outfit font-bold uppercase text-white">LinkedIn</span>
+                </a>
+                <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+                  class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-white hover:bg-white/20 flex items-center justify-center gap-2 group transition-all">
+                  <svg class="w-4 h-4 fill-white group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                  <span class="text-[11px] font-outfit font-bold uppercase text-white">GitHub</span>
+                </a>
+                <a href="https://www.youtube.com/@kushmittal07" target="_blank" rel="noopener noreferrer"
+                  class="p-3 rounded-xl bg-white/5 border border-white/10 hover:border-[#ff0000] hover:bg-[#ff0000]/20 flex items-center justify-center gap-2 group transition-all">
+                  <svg class="w-4 h-4 fill-[#ff0000] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                  <span class="text-[11px] font-outfit font-bold uppercase text-white">YouTube</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Form Box -->
+            <div class="lg:col-span-7">
+              <div
+                class="glass-panel p-6 sm:p-8 border border-[#38BDF8]/30 rounded-3xl shadow-2xl relative overflow-hidden">
+                <div
+                  class="absolute -top-12 -right-12 w-40 h-40 bg-[#38BDF8]/10 rounded-full blur-3xl pointer-events-none">
+                </div>
+
+                <form id="contact-form" class="space-y-4 relative z-10">
+                  <div>
+                    <label for="sender-name"
+                      class="block text-xs font-outfit font-bold uppercase tracking-wider text-slate-300 mb-1.5">Name</label>
+                    <input type="text" id="sender-name" required placeholder="Enter your name here"
+                      class="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-slate-500 text-sm focus:border-[#38BDF8] focus:outline-none focus:ring-1 focus:ring-[#38BDF8] transition-all" />
+                  </div>
+
+                  <div>
+                    <label for="sender-email"
+                      class="block text-xs font-outfit font-bold uppercase tracking-wider text-slate-300 mb-1.5">Mail
+                      ID</label>
+                    <input type="email" id="sender-email" required placeholder="Enter your mail ID here"
+                      class="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-slate-500 text-sm focus:border-[#38BDF8] focus:outline-none focus:ring-1 focus:ring-[#38BDF8] transition-all" />
+                  </div>
+
+                  <div>
+                    <label for="sender-message"
+                      class="block text-xs font-outfit font-bold uppercase tracking-wider text-slate-300 mb-1.5">Message</label>
+                    <textarea id="sender-message" required rows="3" placeholder="Your message"
+                      class="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-slate-500 text-sm focus:border-[#38BDF8] focus:outline-none focus:ring-1 focus:ring-[#38BDF8] transition-all resize-none"></textarea>
+                  </div>
+
+                  <div class="pt-2">
+                    <button type="submit" id="form-submit-btn"
+                      class="btn-gold w-full sm:w-auto !py-3.5 !px-8 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 group">
+                      <span>Send Message</span>
+                      <i data-lucide="send" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                  </div>
+
+                  <div id="form-status" class="hidden"></div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <!-- ==========================================================================
+  FOOTER (BRAND LOGOS, ALWAR LOCATION & PANORAMIC BANNER)
+  ========================================================================== -->
+  <footer class="border-t border-white/10 py-16 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+      <!-- Left Column: Name, Tagline & Real Brand Circle Icons -->
+      <div class="lg:col-span-5 space-y-6 text-left">
+        <div>
+          <h3 class="font-outfit font-black text-3xl sm:text-5xl text-white uppercase tracking-tight">
+            Kush Mittal
+          </h3>
+          <p class="text-slate-400 text-sm font-normal mt-3 max-w-md leading-relaxed">
+            I turn complex data into decision-ready visual stories people remember.
+          </p>
+        </div>
+
+        <!-- Real Brand Circle App Links under Kush Mittal's Name -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/kush-mittal-1b5974299" target="_blank" rel="noopener noreferrer"
+            class="gold-circle-icon group" title="LinkedIn">
+            <svg class="w-5 h-5 fill-[#0a66c2] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+            class="gold-circle-icon group" title="GitHub">
+            <svg class="w-5 h-5 fill-white group-hover:fill-black transition-colors" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/kushmittal07/?hl=en" target="_blank" rel="noopener noreferrer"
+            class="gold-circle-icon group" title="Instagram">
+            <svg class="w-5 h-5 fill-[#e1306c] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@kushmittal07" target="_blank" rel="noopener noreferrer"
+            class="gold-circle-icon group" title="YouTube">
+            <svg class="w-5 h-5 fill-[#ff0000] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+
+          <!-- Twitter / X -->
+          <a href="https://x.com/kushmittal07" target="_blank" rel="noopener noreferrer" class="gold-circle-icon group"
+            title="Twitter / X">
+            <svg class="w-4 h-4 fill-white group-hover:fill-black transition-colors" viewBox="0 0 24 24">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/kushmittal076" target="_blank" rel="noopener noreferrer"
+            class="gold-circle-icon group" title="Facebook">
+            <svg class="w-5 h-5 fill-[#1877f2] group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+            </svg>
+          </a>
+
+          <!-- Email Direct -->
+          <a href="mailto:kushmittal7238@gmail.com" class="gold-circle-icon group" title="Email Direct">
+            <i data-lucide="mail" class="w-5 h-5 text-[#38BDF8] group-hover:text-white transition-colors"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Panoramic Alwar Landscape Banner Image -->
+      <div class="lg:col-span-7">
+        <div class="panoramic-footer-banner w-full">
+          <img src="assets/alwar-landscape.jpg" alt="Alwar Siliserh Lake Palace Landscape Banner" loading="lazy"
+            decoding="async" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-80"></div>
+          <div
+            class="absolute bottom-4 right-4 text-[10px] font-mono text-slate-300 uppercase font-bold tracking-widest bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#38BDF8]"></i>
+            <span>Alwar, Rajasthan, India</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Rights & Credentials Bar -->
+    <div
+      class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 flex items-center justify-center text-center text-sm sm:text-base font-mono text-slate-300 tracking-wider">
+      <div>
+        © 2026 <span class="text-[#38BDF8] font-bold">KUSH MITTAL</span>. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+  MODALS FOR PROJECT PREVIEWS
+  ========================================================================== -->
+
+  <!-- Heart Disease Modal -->
+  <div id="modal-heart" class="modal-backdrop fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="glass-panel max-w-2xl w-full p-6 sm:p-8 relative border border-[#38BDF8]/40">
+      <button data-close-modal class="absolute top-4 right-4 p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="h-60 rounded-xl overflow-hidden mb-4">
+        <img src="assets/project-heart-disease.jpg" alt="Heart Disease Analysis Dashboard" loading="lazy"
+          decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <h3 class="font-outfit font-black text-2xl text-white uppercase">HEART DISEASE ANALYSIS DASHBOARD</h3>
+      <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-1">POWER BI & DAX CLINICAL MODELING</p>
+      <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+        Analyzes clinical records of heart failure patients to uncover survival patterns, risk factors, and demographic
+        trends. Features DAX KPI measures for Alive %, Total Alive vs Death counts, age group segmentation, serum sodium
+        risk markers, and diabetes comorbidity impact.
+      </p>
+      <div class="mt-6 flex gap-3">
+        <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+          class="btn-gold flex-1 text-xs text-center font-bold">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>OPEN GITHUB REPOSITORY</span>
+        </a>
+        <button data-close-modal class="btn-glass text-xs font-bold">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HR Analytics Modal -->
+  <div id="modal-hr" class="modal-backdrop fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="glass-panel max-w-2xl w-full p-6 sm:p-8 relative border border-[#38BDF8]/40">
+      <button data-close-modal class="absolute top-4 right-4 p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="h-60 rounded-xl overflow-hidden mb-4">
+        <img src="assets/project-hr-analytics.jpg" alt="HR Dashboard" loading="lazy" decoding="async"
+          class="w-full h-full object-cover" />
+      </div>
+      <h3 class="font-outfit font-black text-2xl text-white uppercase">HR ANALYTICS DASHBOARD</h3>
+      <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-1">POWER BI & DAX ARCHITECTURE</p>
+      <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+        This executive HR analytics dashboard visualizes employee attrition rates, tenure cohorts, salary bands, and
+        performance metrics across departments. Built with dynamic DAX time intelligence and custom filter panes.
+      </p>
+      <div class="mt-6 flex gap-3">
+        <a href="https://github.com/kushmittal7238-dot/HR-Analytics-Dashboards" target="_blank"
+          rel="noopener noreferrer" class="btn-gold flex-1 text-xs text-center font-bold">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>OPEN GITHUB REPOSITORY</span>
+        </a>
+        <button data-close-modal class="btn-glass text-xs font-bold">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vrinda Store Modal -->
+  <div id="modal-vrinda" class="modal-backdrop fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+    <div class="glass-panel max-w-2xl w-full p-6 sm:p-8 relative border border-[#38BDF8]/40">
+      <button data-close-modal class="absolute top-4 right-4 p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="h-60 rounded-xl overflow-hidden mb-4">
+        <img src="assets/project-vrinda-store.jpg" alt="Vrinda Store Excel" loading="lazy" decoding="async"
+          class="w-full h-full object-cover" />
+      </div>
+      <h3 class="font-outfit font-black text-2xl text-white uppercase">VRINDA STORE DATA ANALYSIS</h3>
+      <p class="text-xs font-mono text-[#38BDF8] font-bold uppercase mt-1">ADVANCED MICROSOFT EXCEL</p>
+      <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+        Comprehensive retail store sales and consumer pattern analytics using Advanced Excel and dynamic Pivot charts.
+        Maps annual revenue distribution, gender demographics, and marketing channel ROI for business expansion.
+      </p>
+      <div class="mt-6 flex gap-3">
+        <a href="https://github.com/kushmittal7238-dot" target="_blank" rel="noopener noreferrer"
+          class="btn-gold flex-1 text-xs text-center font-bold">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>OPEN GITHUB REPOSITORY</span>
+        </a>
+        <button data-close-modal class="btn-glass text-xs font-bold">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>

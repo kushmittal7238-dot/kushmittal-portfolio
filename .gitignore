@@ -1,0 +1,11 @@
+# OS Junk Files
+desktop.ini
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Editor & Temp files
+.vscode/launch.json
+.idea/
+*.swp

@@ -1,0 +1,1107 @@
+/* ==========================================================================
+   KUSH MITTAL - DESIGN SYSTEM & STYLES
+   Theme: Electric Cyan & Neon Violet on Cyber Obsidian Glass
+   ========================================================================== */
+
+:root {
+  --bg-primary: #050505;
+  --bg-secondary: #080808;
+  --bg-card: rgba(12, 12, 12, 0.88);
+  --bg-card-hover: rgba(20, 20, 20, 0.95);
+  
+  --brand-gold: #38BDF8;
+  --brand-gold-glow: rgba(56, 189, 248, 0.45);
+  --brand-gold-light: #38BDF8;
+  
+  --brand-gold: #38BDF8;
+  --brand-gold-bright: #38BDF8;
+  --brand-gold-amber: #0284C7;
+  --brand-gold-dark: #0369A1;
+
+  --brand-cyan: #FFD700;
+  --brand-sky: #D4AF37;
+  --brand-violet: #8b5cf6;
+  --brand-purple: #a855f7;
+  --brand-emerald: #10b981;
+  
+  --text-main: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --text-dim: #666666;
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(56, 189, 248, 0.4);
+  --border-cyan: rgba(56, 189, 248, 0.35);
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #050505 !important;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background-image: none !important;
+}
+
+::selection {
+  background: var(--brand-gold-bright);
+  color: #050505;
+}
+
+/* 3D WebGL Background Canvas Disabled */
+#webgl-bg-canvas {
+  display: none !important;
+}
+
+/* Glassmorphic Panels */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-panel:hover {
+  border-color: var(--border-gold);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 30px var(--brand-gold-glow), inset 0 1px 0 rgba(212, 175, 55, 0.3);
+}
+
+/* 3D Tilt Card */
+.tilt-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text, .gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 25%, #38bdf8 60%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cyan-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 25%, #38bdf8 60%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-glow-text, .gold-glow-text {
+  text-shadow: 0 0 25px rgba(56, 189, 248, 0.65), 0 0 50px rgba(2, 132, 199, 0.35);
+}
+
+/* Royal Metallic Gold Premium CTA Button */
+.btn-gold, .btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 50%, #0369a1 100%);
+  color: #050505;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-gold:hover, .btn-gold:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.75), 0 0 35px rgba(56, 189, 248, 0.65);
+  color: #050505;
+}
+
+/* Red-Gold Vibrant Button -> Gold Metallic */
+.btn-cyan {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 50%, #0369a1 100%);
+  color: #050505;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-cyan:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.65), 0 0 30px rgba(212, 175, 55, 0.55);
+  color: #050505;
+}
+
+/* Glass Outline Button */
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  color: var(--text-main);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--border-gold);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.25);
+}
+
+/* ==========================================================================
+   SCREENSHOT MATCHED EXACT DESIGN CLASSES
+   ========================================================================== */
+
+/* 1. Hanging Gold Year Tags (Screenshot 5 - About) */
+.hanging-year-tag {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 90px;
+  background: linear-gradient(180deg, #D4AF37 0%, #b48811 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(56, 189, 248, 0.45);
+  transform: rotate(-6deg);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+}
+
+.hanging-year-tag::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 14px;
+  border-left: 2px dashed rgba(255, 255, 255, 0.6);
+  border-right: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+.hanging-year-tag:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 16px 35px rgba(212, 175, 55, 0.7);
+}
+
+/* 2. Fluid Gold Organic Blob (Screenshot 4 - Services) */
+.fluid-gold-blob {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+  width: 650px;
+  height: 550px;
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.38) 0%, rgba(180, 136, 17, 0.15) 50%, transparent 75%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 70%;
+  animation: blobFluidAnim 12s ease-in-out infinite alternate;
+}
+
+@keyframes blobFluidAnim {
+  0% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 70%;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 50% 70% 30% 50%;
+    transform: translateY(-50%) rotate(25deg) scale(1.1);
+  }
+}
+
+/* Service Card Floating Staggered (Screenshot 4) */
+.service-card-floating {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card-floating:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--brand-gold);
+  box-shadow: 0 25px 50px rgba(212, 175, 55, 0.35);
+}
+
+/* Square Gold Pill Badge (01, 02, 03, 04) */
+.gold-num-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #D4AF37 0%, #b48811 100%);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+  shrink: 0;
+}
+
+/* 3. Technical Green Grid Overlay (Screenshot 3 - Selected Work) */
+.technical-grid-bg {
+  background-color: #050505;
+  background-image: 
+    linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Editorial Project Card with White Bottom Box (Screenshot 3) */
+.editorial-project-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  color: #111111;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(212, 175, 55, 0.3);
+}
+
+.editorial-project-card .card-image-wrapper {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.editorial-project-card .card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-project-card:hover .card-image-wrapper img {
+  transform: scale(1.08);
+}
+
+.editorial-project-card .card-body-white {
+  padding: 1.75rem;
+  background: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 4. Contact & Footer Styles (Screenshot 1 & 2) */
+.lets-connect-giant {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  color: #D4AF37;
+  line-height: 0.95;
+  text-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
+}
+
+.gold-circle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid #D4AF37;
+  color: #D4AF37;
+  background: rgba(212, 175, 55, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.gold-circle-icon:hover {
+  background: #D4AF37;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+.panoramic-footer-banner {
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.panoramic-footer-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* Floating Animations */
+@keyframes floatAnim {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: floatAnim 5s ease-in-out infinite;
+}
+
+@keyframes pulseBorderCyan {
+  0%, 100% {
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    border-color: rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.5);
+  }
+}
+
+.pulse-border-cyan {
+  animation: pulseBorderCyan 3s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   Smooth Floating Up-and-Down Bobbing Animation (3D AI Cartoon Background)
+   ========================================================================== */
+@keyframes floatBob {
+  0%, 100% {
+    transform: translateY(0px) scale(1.15);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.18);
+  }
+}
+
+@keyframes floatBobFlipped {
+  0%, 100% {
+    transform: scaleX(-1) translateY(0px) scale(1.15);
+  }
+  50% {
+    transform: scaleX(-1) translateY(-20px) scale(1.18);
+  }
+}
+
+.animate-float-bob {
+  animation: floatBob 4.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-bob-flipped {
+  animation: floatBobFlipped 4.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.radial-mask-blend {
+  mix-blend-mode: screen;
+  mask-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 80%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 80%);
+}
+
+/* ==========================================================================
+   Futuristic Cyber Photo Frame Design (Clean, High-Tech, No Spinning Box)
+   ========================================================================== */
+.cyber-photo-container {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Precision Tech Corner Brackets */
+.corner-bracket {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: #D4AF37;
+  z-index: 5;
+  transition: all 0.35s ease;
+}
+.corner-bracket.top-l {
+  top: 0;
+  left: 0;
+  border-top: 2.5px solid #D4AF37;
+  border-left: 2.5px solid #D4AF37;
+  border-top-left-radius: 4px;
+}
+.corner-bracket.top-r {
+  top: 0;
+  right: 0;
+  border-top: 2.5px solid #D4AF37;
+  border-right: 2.5px solid #D4AF37;
+  border-top-right-radius: 4px;
+}
+.corner-bracket.btm-l {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2.5px solid #D4AF37;
+  border-left: 2.5px solid #D4AF37;
+  border-bottom-left-radius: 4px;
+}
+.corner-bracket.btm-r {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2.5px solid #D4AF37;
+  border-right: 2.5px solid #D4AF37;
+  border-bottom-right-radius: 4px;
+}
+
+.cyber-photo-container:hover .corner-bracket {
+  border-color: #a855f7;
+  transform: scale(1.15);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+/* Subtle Concentric Cyber Glow Aura (Gentle Breathing, No Spinning) */
+.cyber-glow-ring {
+  position: absolute;
+  inset: -10px;
+  border-radius: 36px;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.28) 0%, rgba(139, 92, 246, 0.18) 55%, transparent 75%);
+  filter: blur(12px);
+  z-index: 1;
+  animation: cyberAuraBreath 4s ease-in-out infinite;
+}
+
+@keyframes cyberAuraBreath {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+/* Photo Inner Wrapper */
+.photo-inner-wrapper {
+  position: relative;
+  width: 245px;
+  height: 245px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  background: #050505;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cyber-photo-container:hover .photo-inner-wrapper {
+  border-color: #D4AF37;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 215, 0, 0.45);
+  transform: translateY(-4px);
+}
+
+.photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.cyber-photo-container:hover .photo-img {
+  transform: scale(1.05);
+}
+
+/* Futuristic Floating Tech Tag */
+.photo-tech-tag {
+  position: absolute;
+  bottom: -6px;
+  right: 18px;
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  background: rgba(5, 5, 5, 0.9);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #D4AF37;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.05em;
+}
+
+/* Floating Tech Chips on Photo Card */
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(10, 10, 10, 0.85);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #a5f3fc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.tech-chip:hover {
+  border-color: #D4AF37;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Unique 3D Glass App Tiles in "Find Me On" */
+.social-app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 1.35rem 0.85rem;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(15, 15, 15, 0.85), rgba(10, 10, 10, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.social-app-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top center, var(--badge-color, rgba(212, 175, 55, 0.3)), transparent 70%);
+  opacity: 0.4;
+  transition: opacity 0.35s ease;
+}
+
+.social-app-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-color: var(--badge-border, #D4AF37);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 30px var(--badge-glow, rgba(212, 175, 55, 0.5));
+  color: #fff;
+}
+
+.social-app-card:hover::before {
+  opacity: 1;
+}
+
+.social-app-card .app-icon-wrapper {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--icon-bg, rgba(255, 255, 255, 0.06));
+  border: 1px solid var(--icon-border, rgba(255, 255, 255, 0.15));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-app-card:hover .app-icon-wrapper {
+  transform: scale(1.15) translateY(-3px) rotate(4deg);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6), 0 0 20px var(--badge-glow, rgba(212, 175, 55, 0.5));
+}
+
+/* Distinct High-Fidelity App Colors & Gradients */
+.app-linkedin {
+  --badge-color: rgba(10, 102, 194, 0.35);
+  --badge-border: #0a66c2;
+  --badge-glow: rgba(10, 102, 194, 0.6);
+  --icon-bg: linear-gradient(135deg, rgba(10, 102, 194, 0.3), rgba(10, 102, 194, 0.1));
+  --icon-border: rgba(10, 102, 194, 0.5);
+}
+.app-github {
+  --badge-color: rgba(255, 255, 255, 0.25);
+  --badge-border: #ffffff;
+  --badge-glow: rgba(255, 255, 255, 0.45);
+  --icon-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  --icon-border: rgba(255, 255, 255, 0.4);
+}
+.app-youtube {
+  --badge-color: rgba(255, 0, 0, 0.35);
+  --badge-border: #ff0000;
+  --badge-glow: rgba(255, 0, 0, 0.6);
+  --icon-bg: linear-gradient(135deg, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.1));
+  --icon-border: rgba(255, 0, 0, 0.5);
+}
+.app-twitter {
+  --badge-color: rgba(29, 155, 240, 0.35);
+  --badge-border: #1d9bf0;
+  --badge-glow: rgba(29, 155, 240, 0.6);
+  --icon-bg: linear-gradient(135deg, rgba(29, 155, 240, 0.3), rgba(29, 155, 240, 0.1));
+  --icon-border: rgba(29, 155, 240, 0.5);
+}
+.app-facebook {
+  --badge-color: rgba(24, 119, 242, 0.35);
+  --badge-border: #1877f2;
+  --badge-glow: rgba(24, 119, 242, 0.6);
+  --icon-bg: linear-gradient(135deg, rgba(24, 119, 242, 0.3), rgba(24, 119, 242, 0.1));
+  --icon-border: rgba(24, 119, 242, 0.5);
+}
+.app-instagram {
+  --badge-color: rgba(225, 48, 108, 0.35);
+  --badge-border: #e1306c;
+  --badge-glow: rgba(225, 48, 108, 0.6);
+  --icon-bg: linear-gradient(135deg, rgba(225, 48, 108, 0.3), rgba(225, 48, 108, 0.1));
+  --icon-border: rgba(225, 48, 108, 0.5);
+}
+.app-gmail {
+  --badge-color: rgba(234, 67, 53, 0.35);
+  --badge-border: #ea4335;
+  --badge-glow: rgba(234, 67, 53, 0.6);
+  --icon-bg: linear-gradient(135deg, rgba(234, 67, 53, 0.3), rgba(234, 67, 53, 0.1));
+  --icon-border: rgba(234, 67, 53, 0.5);
+}
+
+/* ==========================================================================
+   3D HOLOGRAPHIC QUANTUM CHAMBER STREAM SYSTEM (Pipeline to Certificates)
+   ========================================================================== */
+.quantum-chamber-stream {
+  position: relative;
+  perspective: 1800px;
+  transform-style: preserve-3d;
+  padding: 2rem 0 6rem 0;
+}
+
+/* Glowing Central 3D Cyber Data Spine */
+.cyber-data-spine {
+  display: none !important;
+  position: absolute;
+  top: 4rem;
+  bottom: 4rem;
+  left: 50%;
+  width: 3px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, 
+    rgba(212, 175, 55, 0.1) 0%, 
+    rgba(255, 215, 0, 0.85) 20%, 
+    rgba(139, 92, 246, 0.85) 50%, 
+    rgba(255, 215, 0, 0.85) 80%, 
+    rgba(212, 175, 55, 0.1) 100%
+  );
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6), 0 0 30px rgba(139, 92, 246, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Pulse Node on Spine */
+.spine-pulse-orb {
+  position: absolute;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #D4AF37;
+  box-shadow: 0 0 20px #D4AF37, 0 0 40px #8b5cf6;
+  transform: translate(-50%, -50%);
+  animation: pulseOrbTravel 8s ease-in-out infinite;
+}
+
+@keyframes pulseOrbTravel {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Individual Quantum Chamber Station */
+.quantum-chamber {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 7.5rem;
+  scroll-margin-top: 100px;
+  transform-style: preserve-3d;
+  perspective: 1600px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 650px;
+}
+
+/* Chamber Frame (Floating 3D Holographic Station) */
+/* Chamber Frame (Floating 3D Holographic Station - Transparent WebGL Background) */
+.chamber-frame {
+  position: relative;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1.5rem 0 !important;
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1);
+  will-change: transform;
+}
+
+.chamber-frame:hover {
+  border-color: rgba(212, 175, 55, 0.65);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.95), 
+              0 0 55px rgba(212, 175, 55, 0.3),
+              inset 0 2px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Cyber Neon Top Rim */
+.chamber-frame::before {
+  display: none !important;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #FFD700 25%, #D4AF37 50%, #b48811 75%, transparent);
+  opacity: 0.95;
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+
+/* Subtle Specular Ambient Sheen */
+.chamber-frame::after {
+  display: none !important;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Waypoint Holographic Chip */
+.waypoint-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 9999px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #D4AF37;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.quantum-chamber:hover .waypoint-chip {
+  border-color: #FFD700;
+  color: #D4AF37;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+}
+
+@media (max-width: 768px) {
+  .cyber-data-spine {
+  display: none !important;
+    display: none;
+  }
+  .quantum-chamber {
+    margin-bottom: 4.5rem;
+  }
+  .chamber-frame {
+    padding: 2.25rem 1.25rem 2.5rem 1.25rem;
+    border-radius: 22px;
+  }
+}
+
+/* ==========================================================================
+   3D PERSPECTIVE SCREEN TILT PIPELINE (RAW DATA TO DASHBOARD)
+   ========================================================================== */
+.pipeline-3d-viewport {
+  perspective: 1600px;
+  perspective-origin: center center;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  padding: 1rem 0;
+}
+
+.pipeline-screen-board {
+  position: relative;
+  background: rgba(12, 12, 12, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9), 0 0 45px rgba(212, 175, 55, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform-style: preserve-3d;
+  transform: rotateX(5deg) rotateY(0deg);
+  transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.3, 1), box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.pipeline-stage-card {
+  position: relative;
+  background: linear-gradient(160deg, rgba(15, 15, 15, 0.85) 0%, rgba(8, 8, 8, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transform-style: preserve-3d;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.pipeline-stage-card:hover {
+  transform: translateZ(25px) translateY(-6px);
+  border-color: #D4AF37;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.stage-badge {
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #D4AF37;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pipeline-code-preview {
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #D4AF37;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tech-pill {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+}
+
+/* Animated Progress Bars */
+.skill-bar-outer {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-bar-inner {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #FFD700, #D4AF37, #818cf8, #FFD700);
+  background-size: 200% 100%;
+  animation: shimmerBar 2.5s infinite linear;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes shimmerBar {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Download Pulse Animation */
+@keyframes downloadPulseCyan {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+  }
+  70% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+  }
+}
+
+.download-pulse-cyan {
+  animation: downloadPulseCyan 2.5s infinite;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .avatar-photo-frame {
+    width: 220px;
+    height: 220px;
+  }
+  .glass-panel {
+    border-radius: 16px;
+    padding: 1.25rem !important;
+  }
+}
+
+/* ==========================================================================
+   Zero-Lag Performance & Memory Reduction Engine
+   ========================================================================== */
+.quantum-chamber {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 650px;
+}
+
+#contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 550px;
+}
+
+img {
+  content-visibility: auto;
+}
+
+
+/* ==========================================================================
+   NAVIGATION LINKS (Pure White Inactive, Gold Pill & Pitch-Black Active)
+   ========================================================================== */
+
+
+
+/* Scroll margin offset for fixed header navigation */
+section[id] {
+  scroll-margin-top: 95px !important;
+}
+
+
+/* ==========================================================================
+   NAVIGATION BAR & LINK STYLING (DESKTOP & MOBILE)
+   ========================================================================== */
+.nav-link {
+  color: #ffffff !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.nav-link:hover {
+  color: #38BDF8 !important;
+}
+
+/* Desktop Pill Active State */
+nav .nav-link.active {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #38BDF8 0%, #0284C7 60%, #0369A1 100%) !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.55) !important;
+}
+
+/* Mobile Drawer Active State */
+#mobile-drawer .nav-link.active {
+  color: #38BDF8 !important;
+  background: rgba(56, 189, 248, 0.15) !important;
+  border-left: 4px solid #38BDF8 !important;
+  font-weight: 700 !important;
+}
+
+
+/* Native Scroll Margin Fallback */
+section[id] {
+  scroll-margin-top: 85px !important;
+}
